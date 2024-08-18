@@ -1,3 +1,44 @@
+## 0.2.0
+
+> Note: This release has breaking changes.
+
+ - **REVERT**: "feat: use Dart 3 records for isBetween query field ([#140](https://github.com/GregoryConrad/mimir/issues/140))". ([922debf2](https://github.com/GregoryConrad/mimir/commit/922debf2896fcac5839b9f50e34c8e0daaf5c18b))
+ - **REFACTOR**: update melos to v3 ([#131](https://github.com/GregoryConrad/mimir/issues/131)). ([0c6c2b8b](https://github.com/GregoryConrad/mimir/commit/0c6c2b8ba013ec6e56e869d498e246cce3cf923b))
+ - **REFACTOR**: clean up some of the example code. ([23a9a2e1](https://github.com/GregoryConrad/mimir/commit/23a9a2e110013b01f7288f786b1ecdba7744e929))
+ - **REFACTOR**: switch macOS and iOS build to use C generation. ([1fae3ec9](https://github.com/GregoryConrad/mimir/commit/1fae3ec97391f96bc50a3fe31cda3d817be56cf6))
+ - **FIX**: add android ffi support ([#58](https://github.com/GregoryConrad/mimir/issues/58)). ([e315565c](https://github.com/GregoryConrad/mimir/commit/e315565ca48937a219317924e905769f320c83e0))
+ - **FIX**: allow for windows ARM support. ([140f981f](https://github.com/GregoryConrad/mimir/commit/140f981ffb463c069cff3ee67c32d38742f1bc03))
+ - **FIX**: cocoapod source distribution ([#56](https://github.com/GregoryConrad/mimir/issues/56)). ([afbda44b](https://github.com/GregoryConrad/mimir/commit/afbda44b1cfc9a411c08317213239cde5506ef6b))
+ - **FIX**: make macos example app work with flutter 3.7. ([4369d2dc](https://github.com/GregoryConrad/mimir/commit/4369d2dc4948ca1d0e567fe0744b922bc6e8d859))
+ - **FIX**: android tmp files now use application cache dir ([#184](https://github.com/GregoryConrad/mimir/issues/184)). ([7504e2e3](https://github.com/GregoryConrad/mimir/commit/7504e2e30fb88a96ebc461fbae8003c87b696121))
+ - **FIX**: cocoapod distribution uses GitHub release ([#57](https://github.com/GregoryConrad/mimir/issues/57)). ([aef15049](https://github.com/GregoryConrad/mimir/commit/aef15049510adac9c43d4b33ab9e87c12839b321))
+ - **FIX**: remove pubspec screenshot attribute. ([a5400f66](https://github.com/GregoryConrad/mimir/commit/a5400f66517fdf8717fdfe3445e58e3fd9b959d8))
+ - **FIX**: recreate example's macos/ with flutter 3.7. ([dd43ed8a](https://github.com/GregoryConrad/mimir/commit/dd43ed8a16d3f26da88f24d2fa285dfc3f72e33f))
+ - **FIX**: disable macOS App Sandbox. ([4c41bb67](https://github.com/GregoryConrad/mimir/commit/4c41bb67b79a2126c25e1e0915b85ea6360d3eae))
+ - **FIX**: force library bundling for macOS/iOS in release mode. ([11f2a114](https://github.com/GregoryConrad/mimir/commit/11f2a114d79632e82dbf3dfe7239fecb089edeae))
+ - **FIX**: add proper rust support for macOS/iOS ([#44](https://github.com/GregoryConrad/mimir/issues/44)). ([0ea0d2b2](https://github.com/GregoryConrad/mimir/commit/0ea0d2b23473ee2b78e7d76a0ef406394447ded2))
+ - **FIX**: ensure CMake will use local binaries if present. ([5ffcf3ef](https://github.com/GregoryConrad/mimir/commit/5ffcf3eff0e4201776024eee374ea0caac35ce3b))
+ - **FIX**: add cache layer of downloads for iOS/macOS. ([8ab6af01](https://github.com/GregoryConrad/mimir/commit/8ab6af0105afdd3d71a2c31728a632d97b87cbdb))
+ - **FIX**: add FLUTTER_TARGET_PLATFORM to windows cmake. ([2099bf80](https://github.com/GregoryConrad/mimir/commit/2099bf80935486d68c50220f13989a29fca0e4e0))
+ - **FIX**: hopefully finished the linux cmake. ([d2641bcc](https://github.com/GregoryConrad/mimir/commit/d2641bcc91e7fd9f96d0eaacacdb2c356ea79285))
+ - **FIX**(linux): work toward linux ffi support. ([351336e6](https://github.com/GregoryConrad/mimir/commit/351336e69f8c0a029c65ded26731442b96fa7f09))
+ - **FIX**: update pubspec.yaml to meet pub.dev guidelines. ([4aebf885](https://github.com/GregoryConrad/mimir/commit/4aebf8858fdec70eaa632c6db9ca7e29c82d4c08))
+ - **FEAT**: pagination and infinite scroll support ([#195](https://github.com/GregoryConrad/mimir/issues/195)). ([293db82b](https://github.com/GregoryConrad/mimir/commit/293db82b9af97c86cb18bb9bd393bf3195bee0e0))
+ - **FEAT**: use Dart 3 records for isBetween query field ([#140](https://github.com/GregoryConrad/mimir/issues/140)). ([115ab5e4](https://github.com/GregoryConrad/mimir/commit/115ab5e42d8e70fada062de35b6747843e8d6cd9))
+ - **FEAT**: switch android build over to CMake to enable CI testing. ([eab5fcdb](https://github.com/GregoryConrad/mimir/commit/eab5fcdbbfba201bd5b0712156936f14c8e263fc))
+ - **FEAT**: add manual primary key selection ([#157](https://github.com/GregoryConrad/mimir/issues/157)). ([714533b5](https://github.com/GregoryConrad/mimir/commit/714533b5b2f5b943323bf7ba495f757c7707127d))
+ - **FEAT**: add isNull and isEmpty filters ([#215](https://github.com/GregoryConrad/mimir/issues/215)). ([4752aaa1](https://github.com/GregoryConrad/mimir/commit/4752aaa10f2926e72395aade31679bad6d8302d6))
+ - **DOCS**(screenshot): fix pub.dev screenshot. ([57f07ac5](https://github.com/GregoryConrad/mimir/commit/57f07ac55590502d362953dce426007b4dacef93))
+ - **DOCS**: update with in-repo demo gif. ([3079a422](https://github.com/GregoryConrad/mimir/commit/3079a42252157ab96861b8de955420fb9b3a417e))
+ - **DOCS**: update example app with new widget name. ([7b560db3](https://github.com/GregoryConrad/mimir/commit/7b560db34eeb8559115dc222995faca02341debc))
+ - **DOCS**: clarify some wording. ([26eb879b](https://github.com/GregoryConrad/mimir/commit/26eb879b5147377ad4a770a58af49f41f636b9f1))
+ - **DOCS**: update package description to make pub.dev happy. ([b3938cd1](https://github.com/GregoryConrad/mimir/commit/b3938cd189981772e5241ab27e2d01eb739de7c7))
+ - **DOCS**: rewrite flutter example with rearch ([#232](https://github.com/GregoryConrad/mimir/issues/232)). ([2b604b6a](https://github.com/GregoryConrad/mimir/commit/2b604b6ae350624709d7bf4cfb1da479334608a9))
+ - **DOCS**: update the changelog to remove previous commits. ([23077dee](https://github.com/GregoryConrad/mimir/commit/23077dee007f0a006da632281d3c6fc821fb2cdc))
+ - **DOCS**: improve quality of examples ([#150](https://github.com/GregoryConrad/mimir/issues/150)). ([5bcbf664](https://github.com/GregoryConrad/mimir/commit/5bcbf664d7e1ac361e3fb6554eb6553a75cfca81))
+ - **BREAKING** **REFACTOR**: update to flutter rust bridge v2 ([#332](https://github.com/GregoryConrad/mimir/issues/332)). ([a9a91fc1](https://github.com/GregoryConrad/mimir/commit/a9a91fc1ae2a1350fab083ddad5e2f8f538c493d))
+ - **BREAKING** **FEAT**: Dart 3 support ([#194](https://github.com/GregoryConrad/mimir/issues/194)). ([b987daca](https://github.com/GregoryConrad/mimir/commit/b987daca1a48bbec3fdd815f01b0bb1a62f31bd8))
+
 ## 0.1.0
 
 > Note: This release has breaking changes.
