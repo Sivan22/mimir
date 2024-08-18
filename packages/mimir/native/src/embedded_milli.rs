@@ -31,7 +31,7 @@ type Dump = (MimirIndexSettings, Vec<Document>);
 // We assume any OS we run on will have a page size less than 16 MiB (2^24)
 // and that 16 MiB will be a multiple of the OS page size (which it should be).
 // MAX_POSSIBLE_SIZE complies with memory constraints imposed by iOS without extra entitlements.
-const MAX_POSSIBLE_SIZE: usize = 2_000_000_000;
+const MAX_POSSIBLE_SIZE: usize = 25_000_000_000_000;
 const MAX_OS_PAGE_SIZE: usize = 16_777_216;
 const MAX_METADATA_DB_SIZE: usize = 33_554_432;
 // These are needed because of iOS nonsense; see: https://github.com/GregoryConrad/mimir/issues/227
